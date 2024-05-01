@@ -17,6 +17,7 @@
 		B86CDFD72BE233D80072B70C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CDFD62BE233D80072B70C /* CardView.swift */; };
 		B86CDFD92BE2376E0072B70C /* alien.png in Resources */ = {isa = PBXBuildFile; fileRef = B86CDFD82BE2376E0072B70C /* alien.png */; };
 		B86CDFDB2BE238F40072B70C /* fighting.png in Resources */ = {isa = PBXBuildFile; fileRef = B86CDFDA2BE238F40072B70C /* fighting.png */; };
+		B86CDFDE2BE244C10072B70C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CDFDD2BE244C10072B70C /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B86CDFD62BE233D80072B70C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B86CDFD82BE2376E0072B70C /* alien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien.png; sourceTree = "<group>"; };
 		B86CDFDA2BE238F40072B70C /* fighting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fighting.png; sourceTree = "<group>"; };
+		B86CDFDD2BE244C10072B70C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		B86CDFBD2BD9F8510072B70C /* walkers */ = {
 			isa = PBXGroup;
 			children = (
+				B86CDFDC2BE244B80072B70C /* Models */,
 				B86CDFD32BDA3A560072B70C /* walkers.entitlements */,
 				B86CDFCE2BD9FA6C0072B70C /* icons */,
 				B86CDFBE2BD9F8510072B70C /* walkersApp.swift */,
@@ -93,6 +96,14 @@
 				B86CDFCF2BD9FA840072B70C /* basic_token.png */,
 			);
 			path = icons;
+			sourceTree = "<group>";
+		};
+		B86CDFDC2BE244B80072B70C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B86CDFDD2BE244C10072B70C /* Card.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B86CDFC12BD9F8510072B70C /* ContentView.swift in Sources */,
+				B86CDFDE2BE244C10072B70C /* Card.swift in Sources */,
 				B86CDFCD2BD9F9AF0072B70C /* DashboardView.swift in Sources */,
 				B86CDFBF2BD9F8510072B70C /* walkersApp.swift in Sources */,
 				B86CDFD22BDA03D30072B70C /* HealthManager.swift in Sources */,
