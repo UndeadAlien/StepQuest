@@ -13,6 +13,8 @@ struct CardVC: View {
     var currentSteps: Int
     var viewModel: CardVM
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         VStack {
             HStack {
@@ -30,7 +32,7 @@ struct CardVC: View {
                     Text(card.motivationalQuote)
                         .lineLimit(nil)
                         .font(.title)
-                        .foregroundColor(.black)
+                        .foregroundColor(colorScheme == .dark ? .white : .black)
                         .bold()
                     VStack {
                         HStack {
@@ -41,12 +43,11 @@ struct CardVC: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 15, height: 15)
-                                .foregroundColor(.black)
                         }
                         
                         Text("\(viewModel.difference)")
                             .font(.title)
-                            .foregroundColor(.black)
+                            .foregroundColor(colorScheme == .dark ? .white : .black)
                             .bold()
                     }
                 }
@@ -91,9 +92,11 @@ struct CardVC: View {
 var vm = CardVM()
 #Preview(traits: .sizeThatFitsLayout) {
     Group {
-        ForEach(Card.testData.indices, id: \.self) { index in
-            CardVC(card: Card.testData[index], currentSteps: 10000, viewModel: vm)
-                .environmentObject(vm)
+        ScrollView{
+            ForEach(Card.testData.indices, id: \.self) { index in
+                CardVC(card: Card.testData[index], currentSteps: 10000, viewModel: vm)
+                    .environmentObject(vm)
+            }
         }
     }
 }
