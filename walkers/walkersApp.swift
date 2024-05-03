@@ -11,7 +11,7 @@ import SwiftUI
 struct walkersApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(healthKitManager: HealthKitManager.shared)
+            ContentView()
         }
     }
 }

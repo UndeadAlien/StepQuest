@@ -7,20 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B82B28BE2BE2ECD300DAC384 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B28BD2BE2ECD300DAC384 /* Monster.swift */; };
+		B82B28C52BE2F1F300DAC384 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B28C42BE2F1F300DAC384 /* FirebaseManager.swift */; };
+		B82B28C72BE2F24B00DAC384 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B28C62BE2F24B00DAC384 /* User.swift */; };
+		B82B28CA2BE2F51E00DAC384 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B82B28C92BE2F51E00DAC384 /* GoogleService-Info.plist */; };
+		B82B28CC2BE2F6F800DAC384 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B82B28CB2BE2F6F800DAC384 /* FirebaseAuth */; };
+		B82B28CE2BE2F6F800DAC384 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B82B28CD2BE2F6F800DAC384 /* FirebaseFirestore */; };
+		B82B28D02BE2F6F800DAC384 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B82B28CF2BE2F6F800DAC384 /* FirebaseFirestoreSwift */; };
+		B82B28D32BE412BE00DAC384 /* StepCountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B28D22BE412BE00DAC384 /* StepCountVC.swift */; };
+		B82B28D52BE41DD700DAC384 /* HeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B28D42BE41DD700DAC384 /* HeaderVC.swift */; };
+		B82B28D82BE41EC800DAC384 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B28D72BE41EC800DAC384 /* Formatter.swift */; };
+		B82B28E02BE4467300DAC384 /* boss2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28DD2BE4467200DAC384 /* boss2.jpg */; };
+		B82B28E12BE4467300DAC384 /* boss3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28DE2BE4467200DAC384 /* boss3.jpg */; };
+		B82B28E22BE4467300DAC384 /* boss1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28DF2BE4467200DAC384 /* boss1.jpg */; };
+		B82B28E42BE467B800DAC384 /* CardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B28E32BE467B800DAC384 /* CardVM.swift */; };
+		B82B28EE2BE46CDD00DAC384 /* boss8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28E52BE46CDD00DAC384 /* boss8.jpg */; };
+		B82B28EF2BE46CDD00DAC384 /* boss7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28E62BE46CDD00DAC384 /* boss7.jpg */; };
+		B82B28F02BE46CDD00DAC384 /* boss12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28E72BE46CDD00DAC384 /* boss12.jpg */; };
+		B82B28F12BE46CDD00DAC384 /* boss6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28E82BE46CDD00DAC384 /* boss6.jpg */; };
+		B82B28F22BE46CDD00DAC384 /* boss9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28E92BE46CDD00DAC384 /* boss9.jpg */; };
+		B82B28F32BE46CDD00DAC384 /* boss5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28EA2BE46CDD00DAC384 /* boss5.jpg */; };
+		B82B28F42BE46CDD00DAC384 /* boss10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28EB2BE46CDD00DAC384 /* boss10.jpg */; };
+		B82B28F52BE46CDD00DAC384 /* boss4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28EC2BE46CDD00DAC384 /* boss4.jpg */; };
+		B82B28F62BE46CDD00DAC384 /* boss11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B82B28ED2BE46CDD00DAC384 /* boss11.jpg */; };
 		B86CDFBF2BD9F8510072B70C /* walkersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CDFBE2BD9F8510072B70C /* walkersApp.swift */; };
 		B86CDFC12BD9F8510072B70C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CDFC02BD9F8510072B70C /* ContentView.swift */; };
 		B86CDFC32BD9F8540072B70C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86CDFC22BD9F8540072B70C /* Assets.xcassets */; };
 		B86CDFC62BD9F8540072B70C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86CDFC52BD9F8540072B70C /* Preview Assets.xcassets */; };
 		B86CDFCD2BD9F9AF0072B70C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CDFCC2BD9F9AF0072B70C /* DashboardView.swift */; };
 		B86CDFD02BD9FA840072B70C /* basic_token.png in Resources */ = {isa = PBXBuildFile; fileRef = B86CDFCF2BD9FA840072B70C /* basic_token.png */; };
-		B86CDFD22BDA03D30072B70C /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CDFD12BDA03D30072B70C /* HealthManager.swift */; };
-		B86CDFD72BE233D80072B70C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CDFD62BE233D80072B70C /* CardView.swift */; };
-		B86CDFD92BE2376E0072B70C /* alien.png in Resources */ = {isa = PBXBuildFile; fileRef = B86CDFD82BE2376E0072B70C /* alien.png */; };
+		B86CDFD72BE233D80072B70C /* CardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CDFD62BE233D80072B70C /* CardVC.swift */; };
 		B86CDFDB2BE238F40072B70C /* fighting.png in Resources */ = {isa = PBXBuildFile; fileRef = B86CDFDA2BE238F40072B70C /* fighting.png */; };
 		B86CDFDE2BE244C10072B70C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CDFDD2BE244C10072B70C /* Card.swift */; };
+		B86CDFE02BE2DBD60072B70C /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CDFDF2BE2DBD60072B70C /* HealthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B82B28BD2BE2ECD300DAC384 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		B82B28C42BE2F1F300DAC384 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		B82B28C62BE2F24B00DAC384 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B82B28C92BE2F51E00DAC384 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B82B28D22BE412BE00DAC384 /* StepCountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountVC.swift; sourceTree = "<group>"; };
+		B82B28D42BE41DD700DAC384 /* HeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderVC.swift; sourceTree = "<group>"; };
+		B82B28D72BE41EC800DAC384 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		B82B28DD2BE4467200DAC384 /* boss2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss2.jpg; sourceTree = "<group>"; };
+		B82B28DE2BE4467200DAC384 /* boss3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss3.jpg; sourceTree = "<group>"; };
+		B82B28DF2BE4467200DAC384 /* boss1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss1.jpg; sourceTree = "<group>"; };
+		B82B28E32BE467B800DAC384 /* CardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVM.swift; sourceTree = "<group>"; };
+		B82B28E52BE46CDD00DAC384 /* boss8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss8.jpg; sourceTree = "<group>"; };
+		B82B28E62BE46CDD00DAC384 /* boss7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss7.jpg; sourceTree = "<group>"; };
+		B82B28E72BE46CDD00DAC384 /* boss12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss12.jpg; sourceTree = "<group>"; };
+		B82B28E82BE46CDD00DAC384 /* boss6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss6.jpg; sourceTree = "<group>"; };
+		B82B28E92BE46CDD00DAC384 /* boss9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss9.jpg; sourceTree = "<group>"; };
+		B82B28EA2BE46CDD00DAC384 /* boss5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss5.jpg; sourceTree = "<group>"; };
+		B82B28EB2BE46CDD00DAC384 /* boss10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss10.jpg; sourceTree = "<group>"; };
+		B82B28EC2BE46CDD00DAC384 /* boss4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss4.jpg; sourceTree = "<group>"; };
+		B82B28ED2BE46CDD00DAC384 /* boss11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boss11.jpg; sourceTree = "<group>"; };
 		B86CDFBB2BD9F8510072B70C /* walkers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walkers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86CDFBE2BD9F8510072B70C /* walkersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walkersApp.swift; sourceTree = "<group>"; };
 		B86CDFC02BD9F8510072B70C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,12 +70,11 @@
 		B86CDFC52BD9F8540072B70C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B86CDFCC2BD9F9AF0072B70C /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		B86CDFCF2BD9FA840072B70C /* basic_token.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basic_token.png; sourceTree = "<group>"; };
-		B86CDFD12BDA03D30072B70C /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		B86CDFD32BDA3A560072B70C /* walkers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = walkers.entitlements; sourceTree = "<group>"; };
-		B86CDFD62BE233D80072B70C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		B86CDFD82BE2376E0072B70C /* alien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien.png; sourceTree = "<group>"; };
+		B86CDFD62BE233D80072B70C /* CardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVC.swift; sourceTree = "<group>"; };
 		B86CDFDA2BE238F40072B70C /* fighting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fighting.png; sourceTree = "<group>"; };
 		B86CDFDD2BE244C10072B70C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B86CDFDF2BE2DBD60072B70C /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +82,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82B28CC2BE2F6F800DAC384 /* FirebaseAuth in Frameworks */,
+				B82B28CE2BE2F6F800DAC384 /* FirebaseFirestore in Frameworks */,
+				B82B28D02BE2F6F800DAC384 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B82B28BF2BE2EE9A00DAC384 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B82B28E32BE467B800DAC384 /* CardVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B82B28C02BE2EEA600DAC384 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B82B28D12BE412A000DAC384 /* Components */,
+				B86CDFCC2BD9F9AF0072B70C /* DashboardView.swift */,
+				B86CDFC02BD9F8510072B70C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B82B28C32BE2F1DE00DAC384 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B86CDFDF2BE2DBD60072B70C /* HealthManager.swift */,
+				B82B28C42BE2F1F300DAC384 /* FirebaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B82B28D12BE412A000DAC384 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B86CDFD62BE233D80072B70C /* CardVC.swift */,
+				B82B28D22BE412BE00DAC384 /* StepCountVC.swift */,
+				B82B28D42BE41DD700DAC384 /* HeaderVC.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B82B28D62BE41EAF00DAC384 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B82B28D72BE41EC800DAC384 /* Formatter.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B82B28F72BE46D9100DAC384 /* Bosses */ = {
+			isa = PBXGroup;
+			children = (
+				B82B28DF2BE4467200DAC384 /* boss1.jpg */,
+				B82B28DD2BE4467200DAC384 /* boss2.jpg */,
+				B82B28DE2BE4467200DAC384 /* boss3.jpg */,
+				B82B28EC2BE46CDD00DAC384 /* boss4.jpg */,
+				B82B28EA2BE46CDD00DAC384 /* boss5.jpg */,
+				B82B28E82BE46CDD00DAC384 /* boss6.jpg */,
+				B82B28E62BE46CDD00DAC384 /* boss7.jpg */,
+				B82B28E52BE46CDD00DAC384 /* boss8.jpg */,
+				B82B28E92BE46CDD00DAC384 /* boss9.jpg */,
+				B82B28EB2BE46CDD00DAC384 /* boss10.jpg */,
+				B82B28ED2BE46CDD00DAC384 /* boss11.jpg */,
+				B82B28E72BE46CDD00DAC384 /* boss12.jpg */,
+			);
+			path = Bosses;
+			sourceTree = "<group>";
+		};
 		B86CDFB22BD9F8510072B70C = {
 			isa = PBXGroup;
 			children = (
@@ -67,15 +175,16 @@
 			isa = PBXGroup;
 			children = (
 				B86CDFDC2BE244B80072B70C /* Models */,
+				B82B28C02BE2EEA600DAC384 /* Views */,
+				B82B28BF2BE2EE9A00DAC384 /* ViewModels */,
+				B82B28C32BE2F1DE00DAC384 /* Managers */,
+				B82B28D62BE41EAF00DAC384 /* Util */,
+				B86CDFCE2BD9FA6C0072B70C /* Icons */,
 				B86CDFD32BDA3A560072B70C /* walkers.entitlements */,
-				B86CDFCE2BD9FA6C0072B70C /* icons */,
 				B86CDFBE2BD9F8510072B70C /* walkersApp.swift */,
-				B86CDFC02BD9F8510072B70C /* ContentView.swift */,
+				B82B28C92BE2F51E00DAC384 /* GoogleService-Info.plist */,
 				B86CDFC22BD9F8540072B70C /* Assets.xcassets */,
 				B86CDFC42BD9F8540072B70C /* Preview Content */,
-				B86CDFCC2BD9F9AF0072B70C /* DashboardView.swift */,
-				B86CDFD12BDA03D30072B70C /* HealthManager.swift */,
-				B86CDFD62BE233D80072B70C /* CardView.swift */,
 			);
 			path = walkers;
 			sourceTree = "<group>";
@@ -88,20 +197,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B86CDFCE2BD9FA6C0072B70C /* icons */ = {
+		B86CDFCE2BD9FA6C0072B70C /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				B82B28F72BE46D9100DAC384 /* Bosses */,
 				B86CDFDA2BE238F40072B70C /* fighting.png */,
-				B86CDFD82BE2376E0072B70C /* alien.png */,
 				B86CDFCF2BD9FA840072B70C /* basic_token.png */,
 			);
-			path = icons;
+			path = Icons;
 			sourceTree = "<group>";
 		};
 		B86CDFDC2BE244B80072B70C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B86CDFDD2BE244C10072B70C /* Card.swift */,
+				B82B28BD2BE2ECD300DAC384 /* Monster.swift */,
+				B82B28C62BE2F24B00DAC384 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,6 +233,11 @@
 			dependencies = (
 			);
 			name = walkers;
+			packageProductDependencies = (
+				B82B28CB2BE2F6F800DAC384 /* FirebaseAuth */,
+				B82B28CD2BE2F6F800DAC384 /* FirebaseFirestore */,
+				B82B28CF2BE2F6F800DAC384 /* FirebaseFirestoreSwift */,
+			);
 			productName = walkers;
 			productReference = B86CDFBB2BD9F8510072B70C /* walkers.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +266,9 @@
 				Base,
 			);
 			mainGroup = B86CDFB22BD9F8510072B70C;
+			packageReferences = (
+				B82B28C82BE2F2BF00DAC384 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B86CDFBC2BD9F8510072B70C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,11 +283,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B86CDFD92BE2376E0072B70C /* alien.png in Resources */,
+				B82B28EE2BE46CDD00DAC384 /* boss8.jpg in Resources */,
+				B82B28EF2BE46CDD00DAC384 /* boss7.jpg in Resources */,
 				B86CDFC62BD9F8540072B70C /* Preview Assets.xcassets in Resources */,
+				B82B28E12BE4467300DAC384 /* boss3.jpg in Resources */,
 				B86CDFDB2BE238F40072B70C /* fighting.png in Resources */,
+				B82B28F42BE46CDD00DAC384 /* boss10.jpg in Resources */,
+				B82B28F22BE46CDD00DAC384 /* boss9.jpg in Resources */,
+				B82B28F52BE46CDD00DAC384 /* boss4.jpg in Resources */,
 				B86CDFD02BD9FA840072B70C /* basic_token.png in Resources */,
+				B82B28F02BE46CDD00DAC384 /* boss12.jpg in Resources */,
+				B82B28F12BE46CDD00DAC384 /* boss6.jpg in Resources */,
+				B82B28F62BE46CDD00DAC384 /* boss11.jpg in Resources */,
+				B82B28E02BE4467300DAC384 /* boss2.jpg in Resources */,
 				B86CDFC32BD9F8540072B70C /* Assets.xcassets in Resources */,
+				B82B28F32BE46CDD00DAC384 /* boss5.jpg in Resources */,
+				B82B28CA2BE2F51E00DAC384 /* GoogleService-Info.plist in Resources */,
+				B82B28E22BE4467300DAC384 /* boss1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,12 +310,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86CDFE02BE2DBD60072B70C /* HealthManager.swift in Sources */,
+				B82B28D82BE41EC800DAC384 /* Formatter.swift in Sources */,
 				B86CDFC12BD9F8510072B70C /* ContentView.swift in Sources */,
+				B82B28D32BE412BE00DAC384 /* StepCountVC.swift in Sources */,
+				B82B28E42BE467B800DAC384 /* CardVM.swift in Sources */,
 				B86CDFDE2BE244C10072B70C /* Card.swift in Sources */,
+				B82B28C52BE2F1F300DAC384 /* FirebaseManager.swift in Sources */,
 				B86CDFCD2BD9F9AF0072B70C /* DashboardView.swift in Sources */,
+				B82B28D52BE41DD700DAC384 /* HeaderVC.swift in Sources */,
 				B86CDFBF2BD9F8510072B70C /* walkersApp.swift in Sources */,
-				B86CDFD22BDA03D30072B70C /* HealthManager.swift in Sources */,
-				B86CDFD72BE233D80072B70C /* CardView.swift in Sources */,
+				B86CDFD72BE233D80072B70C /* CardVC.swift in Sources */,
+				B82B28C72BE2F24B00DAC384 /* User.swift in Sources */,
+				B82B28BE2BE2ECD300DAC384 /* Monster.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +465,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +496,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +532,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B82B28C82BE2F2BF00DAC384 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B82B28CB2BE2F6F800DAC384 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B82B28C82BE2F2BF00DAC384 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B82B28CD2BE2F6F800DAC384 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B82B28C82BE2F2BF00DAC384 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		B82B28CF2BE2F6F800DAC384 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B82B28C82BE2F2BF00DAC384 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B86CDFB32BD9F8510072B70C /* Project object */;
 }

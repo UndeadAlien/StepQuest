@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBkSUBPYPS4q93TpH4mvE1M2kqdWP--JeM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>69405703690</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.beyondspace.walkers</string>
+	<key>PROJECT_ID</key>
+	<string>walkers-cb0d8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>walkers-cb0d8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:69405703690:ios:0edc46307100e0cdd0a9f3</string>
+</dict>
+</plist>

@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardVC: View {
     
     var card: Card
+    var currentSteps: Int
+    var viewModel: CardVM
     
     var body: some View {
         VStack {
@@ -18,9 +20,15 @@ struct CardView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 150, height: 150)
+                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10)))
+                    .padding(.leading, 10)
+                    .padding(.top, 10)
+                
+                Spacer()
                 
                 VStack {
-                    Text(card.main_title)
+                    Text(card.motivationalQuote)
+                        .lineLimit(nil)
                         .font(.title)
                         .foregroundColor(.black)
                         .bold()
@@ -35,48 +43,57 @@ struct CardView: View {
                                 .frame(width: 15, height: 15)
                                 .foregroundColor(.black)
                         }
-                        Text("\(card.total_steps - card.steps_done)")
+                        
+                        Text("\(viewModel.difference)")
                             .font(.title)
                             .foregroundColor(.black)
                             .bold()
                     }
                 }
+                .padding(.trailing, 25)
             }
-            .cornerRadius(15)
             
             VStack {
-                HStack {
-                    let progress = Double(card.steps_done) / Double(card.total_steps)
-                    ProgressView(value: progress, total: 1.0)
-                }
+                ProgressView(value: viewModel.progress, total: 1.0)
+                    .progressViewStyle(LinearProgressViewStyle(tint: viewModel.completed ? .green : .blue))
                 
                 HStack {
-                    Text("\(card.steps_done) steps done")
+                    Text("Current: \(currentSteps)")
                     Spacer()
-                    Text("Goal \(card.total_steps)")
+                    Text("Goal: \(Int(card.goalSteps))")
                 }
                 .padding(.horizontal, 10)
                 .font(.subheadline)
                 .cornerRadius(10)
                 .foregroundStyle(.gray)
+                
+                if viewModel.completed {
+                    Button {
+                        withAnimation {
+                            viewModel.updateCard()
+                        }
+                    } label: {
+                        Text("Claim Reward")
+                    }
+                    .buttonStyle(BorderedProminentButtonStyle())
+                }
             }
             .padding()
+
         }
 
     }
 }
 
-#Preview {
-    let image = "alien"
-    let main_title = "You're off to a great start!"
-    
-    let card = Card(
-        image: image,
-        main_title: main_title,
-        total_steps: 10000,
-        steps_done: 4356,
-        completed: false
-    )
-    
-    return CardView(card: card)
+//#Preview(traits: .sizeThatFitsLayout) {
+//    return CardVC(card: Card.testData[5], healthManager: HealthManager.shared)
+//}
+var vm = CardVM()
+#Preview(traits: .sizeThatFitsLayout) {
+    Group {
+        ForEach(Card.testData.indices, id: \.self) { index in
+            CardVC(card: Card.testData[index], currentSteps: 10000, viewModel: vm)
+                .environmentObject(vm)
+        }
+    }
 }
