@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8015A732BE4BA2500341A8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8015A722BE4BA2500341A8B /* GoogleService-Info.plist */; };
 		B82B28BE2BE2ECD300DAC384 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B28BD2BE2ECD300DAC384 /* Monster.swift */; };
 		B82B28C52BE2F1F300DAC384 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B28C42BE2F1F300DAC384 /* FirebaseManager.swift */; };
 		B82B28C72BE2F24B00DAC384 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B28C62BE2F24B00DAC384 /* User.swift */; };
-		B82B28CA2BE2F51E00DAC384 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B82B28C92BE2F51E00DAC384 /* GoogleService-Info.plist */; };
 		B82B28CC2BE2F6F800DAC384 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B82B28CB2BE2F6F800DAC384 /* FirebaseAuth */; };
 		B82B28CE2BE2F6F800DAC384 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B82B28CD2BE2F6F800DAC384 /* FirebaseFirestore */; };
 		B82B28D02BE2F6F800DAC384 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B82B28CF2BE2F6F800DAC384 /* FirebaseFirestoreSwift */; };
@@ -43,10 +43,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8015A722BE4BA2500341A8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B82B28BD2BE2ECD300DAC384 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		B82B28C42BE2F1F300DAC384 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		B82B28C62BE2F24B00DAC384 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B82B28C92BE2F51E00DAC384 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B82B28D22BE412BE00DAC384 /* StepCountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountVC.swift; sourceTree = "<group>"; };
 		B82B28D42BE41DD700DAC384 /* HeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderVC.swift; sourceTree = "<group>"; };
 		B82B28D72BE41EC800DAC384 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
@@ -181,8 +181,8 @@
 				B82B28D62BE41EAF00DAC384 /* Util */,
 				B86CDFCE2BD9FA6C0072B70C /* Icons */,
 				B86CDFD32BDA3A560072B70C /* StepQuest.entitlements */,
+				B8015A722BE4BA2500341A8B /* GoogleService-Info.plist */,
 				B86CDFBE2BD9F8510072B70C /* StepQuestApp.swift */,
-				B82B28C92BE2F51E00DAC384 /* GoogleService-Info.plist */,
 				B86CDFC22BD9F8540072B70C /* Assets.xcassets */,
 				B86CDFC42BD9F8540072B70C /* Preview Content */,
 			);
@@ -295,10 +295,10 @@
 				B82B28F02BE46CDD00DAC384 /* boss12.jpg in Resources */,
 				B82B28F12BE46CDD00DAC384 /* boss6.jpg in Resources */,
 				B82B28F62BE46CDD00DAC384 /* boss11.jpg in Resources */,
+				B8015A732BE4BA2500341A8B /* GoogleService-Info.plist in Resources */,
 				B82B28E02BE4467300DAC384 /* boss2.jpg in Resources */,
 				B86CDFC32BD9F8540072B70C /* Assets.xcassets in Resources */,
 				B82B28F32BE46CDD00DAC384 /* boss5.jpg in Resources */,
-				B82B28CA2BE2F51E00DAC384 /* GoogleService-Info.plist in Resources */,
 				B82B28E22BE4467300DAC384 /* boss1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,13 +453,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = walkers/walkers.entitlements;
+				CODE_SIGN_ENTITLEMENTS = StepQuest/StepQuest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"walkers/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"StepQuest/Preview Content\"";
 				DEVELOPMENT_TEAM = 729ADA9GAL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = StepQuest;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "To read the health data and show it in the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -471,7 +473,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.beyondspace.walkers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyondspace.StepQuest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -484,13 +486,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = walkers/walkers.entitlements;
+				CODE_SIGN_ENTITLEMENTS = StepQuest/StepQuest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"walkers/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"StepQuest/Preview Content\"";
 				DEVELOPMENT_TEAM = 729ADA9GAL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = StepQuest;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "To read the health data and show it in the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -502,7 +506,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.beyondspace.walkers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyondspace.StepQuest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

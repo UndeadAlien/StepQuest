@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBkSUBPYPS4q93TpH4mvE1M2kqdWP--JeM</string>
+	<string>AIzaSyD4U0bxac1JXnrety_MB1ZgP3P6paZyEFY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>69405703690</string>
+	<string>56468692194</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.beyondspace.walkers</string>
+	<string>com.beyondspace.StepQuest</string>
 	<key>PROJECT_ID</key>
-	<string>walkers-cb0d8</string>
+	<string>stepquest-275ba</string>
 	<key>STORAGE_BUCKET</key>
-	<string>walkers-cb0d8.appspot.com</string>
+	<string>stepquest-275ba.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:69405703690:ios:0edc46307100e0cdd0a9f3</string>
+	<string>1:56468692194:ios:359077fa07d36970f312bb</string>
 </dict>
 </plist>
